@@ -1,7 +1,6 @@
-package Files.DAO;
+package Files.Dao;
 
-public class articleDAOimpl {
-  package Files.Dao;
+import java.util.Objects;
 
 public class articleDaoImpl {
     private int id;
@@ -48,13 +47,11 @@ public class articleDaoImpl {
 
     @Override
     public String toString() {
-        return "Article{" +
+        return "article{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", user=" + user +
                 '}';
     }
-}
-
 }
