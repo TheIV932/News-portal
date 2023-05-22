@@ -19,7 +19,7 @@ public class userDaoImpl {
         public void setId(int id) { this.id = id; }
 
         public String getName() { return username; }
-        public void setName(String name) { this.username = name; }
+        public void setName(String name) { this.username = username; }
 
         @Override
         public boolean equals(Object o) {
@@ -44,3 +44,4 @@ public class userDaoImpl {
                     '}';
         }
     }
+
