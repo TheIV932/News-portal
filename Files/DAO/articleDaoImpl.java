@@ -10,7 +10,7 @@ public class articleDaoImpl {
 
     public articleDaoImpl() {}
 
-    public articleDaoImpl(int id, String title, String content, userDaoImpl user) {
+    public articleDaoImpl(int id, String title, String content, userDaoImpl username) {
         this.id = id;
         this.title = title;
         this.content = content;
