@@ -4,20 +4,22 @@ import java.util.Objects;
 
 public class userDaoImpl {
         private int id;
-        private String name;
+        private String username;
+        private String password;
 
         public userDaoImpl () {}
 
-        public userDaoImpl (int id, String name) {
+        public userDaoImpl (int id, String username, String password) {
             this.id = id;
-            this.name = name;
+            this.username = username;
+            this.password = password;
         }
 
         public int getId() { return id; }
         public void setId(int id) { this.id = id; }
 
-        public String getName() { return name; }
-        public void setName(String name) { this.name = name; }
+        public String getName() { return username; }
+        public void setName(String name) { this.username = name; }
 
         @Override
         public boolean equals(Object o) {
@@ -25,20 +27,20 @@ public class userDaoImpl {
             if (o == null || getClass() != o.getClass()) return false;
             userDaoImpl user = (userDaoImpl) o;
             return id == user.id &&
-                    Objects.equals(name, user.name);
+                    Objects.equals(username, user.username);
         }
 
         @Override
         public int hashCode() {
-            return Objects.hash(id, name);
+            return Objects.hash(id, username, password);
         }
 
         @Override
         public String toString() {
             return "user{" +
-                    "id=" + id +
-                    ", name='" + name + '\'' +
+                    "id" + id +
+                    "username" + username +
+                    "password" + password + '\'' +
                     '}';
         }
     }
-
