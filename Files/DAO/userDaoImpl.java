@@ -45,7 +45,7 @@ public class articleDaoImpl {
 
     @Override
     public String toString() {
-        return "Article{" +
+        return "article{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
