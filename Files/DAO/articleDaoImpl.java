@@ -10,11 +10,11 @@ public class articleDaoImpl {
 
     public articleDaoImpl() {}
 
-    public articleDaoImpl(int id, String title, String content, userDaoImpl username) {
+    public articleDaoImpl(int id, String title, String content, userDaoImpl user) {
         this.id = id;
         this.title = title;
         this.content = content;
-        this.user = userDaoImpl;
+        this.user = user;
     }
 
     public int getId() { return id; }
